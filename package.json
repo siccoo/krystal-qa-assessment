@@ -1,0 +1,16 @@
+{
+  "name": "krystal-qa-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome",
+    "cy:run:headed": "cypress run --headed --browser chrome"
+  },
+  "devDependencies": {
+    "cypress": "^15.5.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
