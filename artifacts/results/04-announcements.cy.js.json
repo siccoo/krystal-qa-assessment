@@ -1,0 +1,143 @@
+{
+  "spec": "04-announcements.cy.js",
+  "browser": "Chrome",
+  "cypress": "15.21.1",
+  "baseUrl": "https://admin.krystalhrsite.kdns.site",
+  "startedAt": "2026-10-09T16:01:11.461Z",
+  "endedAt": "2026-10-09T16:02:50.403Z",
+  "tests": [
+    {
+      "id": "ANN-001",
+      "title": "ANN-001 | Announcements page lists sent announcements",
+      "state": "passed",
+      "duration": 2979,
+      "error": null
+    },
+    {
+      "id": "ANN-019",
+      "title": "ANN-019 | Announcement list keeps every column in view",
+      "state": "failed",
+      "duration": 2426,
+      "error": "AssertionError: columns pushed outside the 1280px viewport on page 2 (longest title: 255 characters): expected [ Array(4) ] to deeply equal []"
+    },
+    {
+      "id": "ANN-002",
+      "title": "ANN-002 | Search by title filters the list and shows an empty state",
+      "state": "passed",
+      "duration": 4166,
+      "error": null
+    },
+    {
+      "id": "ANN-003",
+      "title": "ANN-003 | Search also matches the sender address",
+      "state": "failed",
+      "duration": 2545,
+      "error": "AssertionError: announcements found when searching \"support@krystalhr.com\": expected 0 to be above 0"
+    },
+    {
+      "id": "ANN-004",
+      "title": "ANN-004 | Sort by Title and Oldest reorder the list",
+      "state": "passed",
+      "duration": 5115,
+      "error": null
+    },
+    {
+      "id": "ANN-005",
+      "title": "ANN-005 | Create Announcement: recipients, title and body are required",
+      "state": "passed",
+      "duration": 1762,
+      "error": null
+    },
+    {
+      "id": "ANN-006",
+      "title": "ANN-006 | Create Announcement: sender is required",
+      "state": "passed",
+      "duration": 4202,
+      "error": null
+    },
+    {
+      "id": "ANN-007",
+      "title": "ANN-007 | Create Announcement: title longer than 255 characters is rejected",
+      "state": "passed",
+      "duration": 4661,
+      "error": null
+    },
+    {
+      "id": "ANN-008",
+      "title": "ANN-008 | A recipient can be searched, selected and removed",
+      "state": "passed",
+      "duration": 3521,
+      "error": null
+    },
+    {
+      "id": "ANN-009",
+      "title": "ANN-009 | Recipient search with no match shows a message",
+      "state": "passed",
+      "duration": 2753,
+      "error": null
+    },
+    {
+      "id": "ANN-010",
+      "title": "ANN-010 | 'Select All' targets every organization",
+      "state": "passed",
+      "duration": 1668,
+      "error": null
+    },
+    {
+      "id": "ANN-011",
+      "title": "ANN-011 | Organizations that are not yet approved cannot be selected as recipients",
+      "state": "failed",
+      "duration": 2999,
+      "error": "AssertionError: recipient options offered for pending organization \"QAMC REJECT 1635382\": expected 1 to equal 0"
+    },
+    {
+      "id": "ANN-012",
+      "title": "ANN-012 | A valid announcement is sent and listed first",
+      "state": "passed",
+      "duration": 6839,
+      "error": null
+    },
+    {
+      "id": "ANN-013",
+      "title": "ANN-013 | Sending an announcement shows a success confirmation",
+      "state": "passed",
+      "duration": 604,
+      "error": null
+    },
+    {
+      "id": "ANN-014",
+      "title": "ANN-014 | The announcement email reaches the recipient organization",
+      "state": "passed",
+      "duration": 3098,
+      "error": null
+    },
+    {
+      "id": "ANN-015",
+      "title": "ANN-015 | View Details shows sender, date, title, body and recipients",
+      "state": "passed",
+      "duration": 18542,
+      "error": null
+    },
+    {
+      "id": "ANN-016",
+      "title": "ANN-016 | Details page is titled as a details page",
+      "state": "failed",
+      "duration": 16930,
+      "error": "Error: Timed out retrying after 15000ms: Expected the page not to show \"Send Announcement\""
+    },
+    {
+      "id": "ANN-017",
+      "title": "ANN-017 | Script-bearing HTML in the body is sanitised",
+      "state": "passed",
+      "duration": 9219,
+      "error": null
+    },
+    {
+      "id": "ANN-018",
+      "title": "ANN-018 | Cancel leaves the form without sending",
+      "state": "passed",
+      "duration": 4326,
+      "error": null
+    }
+  ]
+}

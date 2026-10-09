@@ -1,0 +1,94 @@
+{
+  "spec": "01-dashboard.cy.js",
+  "browser": "Chrome",
+  "cypress": "15.21.1",
+  "baseUrl": "https://admin.krystalhrsite.kdns.site",
+  "startedAt": "2026-10-09T15:55:05.926Z",
+  "endedAt": "2026-10-09T15:55:48.446Z",
+  "tests": [
+    {
+      "id": "DSH-001",
+      "title": "DSH-001 | Dashboard shows the three KPI cards with numeric values",
+      "state": "passed",
+      "duration": 6725,
+      "error": null
+    },
+    {
+      "id": "DSH-002",
+      "title": "DSH-002 | Side menu lists the four modules and each link opens its page",
+      "state": "passed",
+      "duration": 3823,
+      "error": null
+    },
+    {
+      "id": "DSH-003",
+      "title": "DSH-003 | 'Total Organizations' matches the number of records in the organization list",
+      "state": "passed",
+      "duration": 4340,
+      "error": null
+    },
+    {
+      "id": "DSH-004",
+      "title": "DSH-004 | 'Pending Organizations' matches the number of pending sign-ups",
+      "state": "passed",
+      "duration": 3711,
+      "error": null
+    },
+    {
+      "id": "DSH-005",
+      "title": "DSH-005 | Organization Status chart is consistent with the KPI cards",
+      "state": "passed",
+      "duration": 2586,
+      "error": null
+    },
+    {
+      "id": "DSH-006",
+      "title": "DSH-006 | KPI trend badges show a unit and are specific to each card",
+      "state": "failed",
+      "duration": 1702,
+      "error": "AssertionError: Total Organizations trend badge: expected '1904.17' to match /%/"
+    },
+    {
+      "id": "DSH-007",
+      "title": "DSH-007 | 'Action Required' alerts refer to real organizations",
+      "state": "failed",
+      "duration": 5937,
+      "error": "AssertionError: alert names that match no organization: expected [ Array(3) ] to deeply equal []"
+    },
+    {
+      "id": "DSH-008",
+      "title": "DSH-008 | 'View all' in Action Required opens the full list of alerts",
+      "state": "failed",
+      "duration": 3847,
+      "error": "AssertionError: 'View all' navigated, opened a dialog or expanded the list: expected false to equal true"
+    },
+    {
+      "id": "DSH-009",
+      "title": "DSH-009 | Companies table on the dashboard shows its columns and ten rows",
+      "state": "passed",
+      "duration": 1481,
+      "error": null
+    },
+    {
+      "id": "DSH-010",
+      "title": "DSH-010 | Dashboard search filters companies and shows an empty-state message",
+      "state": "passed",
+      "duration": 4611,
+      "error": null
+    },
+    {
+      "id": "DSH-011",
+      "title": "DSH-011 | Light / dark appearance toggle switches the theme",
+      "state": "passed",
+      "duration": 1695,
+      "error": null
+    },
+    {
+      "id": "DSH-012",
+      "title": "DSH-012 | 'Add Organization' can be opened from the dashboard",
+      "state": "passed",
+      "duration": 1773,
+      "error": null
+    }
+  ]
+}

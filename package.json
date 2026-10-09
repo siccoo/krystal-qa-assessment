@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run --browser chrome",
-    "cy:run:headed": "cypress run --headed --browser chrome"
+    "cy:open": "env -u ELECTRON_RUN_AS_NODE cypress open",
+    "cy:run": "env -u ELECTRON_RUN_AS_NODE cypress run --browser chrome",
+    "cy:run:headed": "env -u ELECTRON_RUN_AS_NODE cypress run --headed --browser chrome",
+    "report": "node generate-excel-report.js",
+    "test": "npm run cy:run; npm run report"
   },
   "devDependencies": {
     "cypress": "^15.5.0"

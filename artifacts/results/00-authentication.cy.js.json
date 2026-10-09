@@ -1,0 +1,66 @@
+{
+  "spec": "00-authentication.cy.js",
+  "browser": "Chrome",
+  "cypress": "15.21.1",
+  "baseUrl": "https://admin.krystalhrsite.kdns.site",
+  "startedAt": "2026-10-09T15:54:37.152Z",
+  "endedAt": "2026-10-09T15:55:01.154Z",
+  "tests": [
+    {
+      "id": "AUTH-001",
+      "title": "AUTH-001 | Login page shows email, password and Log in controls",
+      "state": "passed",
+      "duration": 3074,
+      "error": null
+    },
+    {
+      "id": "AUTH-002",
+      "title": "AUTH-002 | Valid assessment credentials log in to the dashboard",
+      "state": "passed",
+      "duration": 3503,
+      "error": null
+    },
+    {
+      "id": "AUTH-003",
+      "title": "AUTH-003 | Wrong password is rejected with a generic error",
+      "state": "passed",
+      "duration": 2372,
+      "error": null
+    },
+    {
+      "id": "AUTH-004",
+      "title": "AUTH-004 | Unknown email gets the same generic error (no account enumeration)",
+      "state": "passed",
+      "duration": 2714,
+      "error": null
+    },
+    {
+      "id": "AUTH-005",
+      "title": "AUTH-005 | Empty login form is blocked by required-field validation",
+      "state": "passed",
+      "duration": 1120,
+      "error": null
+    },
+    {
+      "id": "AUTH-006",
+      "title": "AUTH-006 | Module pages redirect to login when not authenticated",
+      "state": "passed",
+      "duration": 1742,
+      "error": null
+    },
+    {
+      "id": "AUTH-007",
+      "title": "AUTH-007 | Log Out ends the session",
+      "state": "passed",
+      "duration": 6146,
+      "error": null
+    },
+    {
+      "id": "AUTH-008",
+      "title": "AUTH-008 | Forgot password gives the same response for known and unknown emails",
+      "state": "passed",
+      "duration": 3231,
+      "error": null
+    }
+  ]
+}

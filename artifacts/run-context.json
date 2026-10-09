@@ -1,0 +1,61 @@
+{
+  "active": {
+    "name": "QAMC Active 1417472",
+    "email": "qamc.ac.1417472@mailinator.com",
+    "domain": "qac1417472",
+    "idPrefix": "ZQX",
+    "phone": "08031234567",
+    "industry": "Technology",
+    "address": "12 Marina Road, Lagos",
+    "employees": "25",
+    "adminFirstName": "Ada",
+    "adminLastName": "Tester",
+    "adminEmail": "qamc.ac.admin.1417472@mailinator.com",
+    "adminPhone": "08031234568",
+    "active": true,
+    "logo": "cypress/fixtures/logo.png",
+    "id": "1012",
+    "createdAt": 1791561427376
+  },
+  "pending": {
+    "name": "QAMC Pending 1553763",
+    "email": "qamc.pe.1553763@mailinator.com",
+    "domain": "qpe1553763",
+    "idPrefix": "ZQX",
+    "phone": "08031234567",
+    "industry": "Finance",
+    "address": "12 Marina Road, Lagos",
+    "employees": "25",
+    "adminFirstName": "Ada",
+    "adminLastName": "Tester",
+    "adminEmail": "qamc.pe.admin.1553763@mailinator.com",
+    "adminPhone": "08031234568",
+    "active": false,
+    "id": "1013",
+    "createdAt": 1791561560048
+  },
+  "rejected": {
+    "name": "QAMC Reject 1635382",
+    "email": "qamc.re.1635382@mailinator.com",
+    "domain": "qre1635382",
+    "idPrefix": "ZQX",
+    "phone": "08031234567",
+    "industry": "Technology",
+    "address": "12 Marina Road, Lagos",
+    "employees": "25",
+    "adminFirstName": "Ada",
+    "adminLastName": "Tester",
+    "adminEmail": "qamc.re.admin.1635382@mailinator.com",
+    "adminPhone": "08031234568",
+    "active": false,
+    "id": "1014",
+    "createdAt": 1791561643522
+  },
+  "emailsBeforeApproval": 4,
+  "announcement": {
+    "title": "QAMC Announcement 1791561710883",
+    "body": "Hello team, this is the QA announcement body 1791561710883.",
+    "sender": "product@krystalhr.com",
+    "confirmationShown": true
+  }
+}

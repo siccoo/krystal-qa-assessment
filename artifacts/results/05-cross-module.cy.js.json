@@ -1,0 +1,45 @@
+{
+  "spec": "05-cross-module.cy.js",
+  "browser": "Chrome",
+  "cypress": "15.21.1",
+  "baseUrl": "https://admin.krystalhrsite.kdns.site",
+  "startedAt": "2026-10-09T16:02:57.544Z",
+  "endedAt": "2026-10-09T16:03:16.304Z",
+  "tests": [
+    {
+      "id": "SEC-001",
+      "title": "SEC-001 | All four modules load without a server error",
+      "state": "passed",
+      "duration": 7943,
+      "error": null
+    },
+    {
+      "id": "SEC-002",
+      "title": "SEC-002 | Log viewer API is not readable without logging in",
+      "state": "failed",
+      "duration": 1746,
+      "error": "AssertionError: log viewer endpoints readable without a session: expected [ Array(2) ] to deeply equal []"
+    },
+    {
+      "id": "SEC-003",
+      "title": "SEC-003 | Unknown URL returns a 404 page",
+      "state": "passed",
+      "duration": 1687,
+      "error": null
+    },
+    {
+      "id": "SEC-004",
+      "title": "SEC-004 | Unknown announcement ID returns 404",
+      "state": "passed",
+      "duration": 656,
+      "error": null
+    },
+    {
+      "id": "SEC-005",
+      "title": "SEC-005 | HTML in organization names is displayed as text",
+      "state": "passed",
+      "duration": 6591,
+      "error": null
+    }
+  ]
+}

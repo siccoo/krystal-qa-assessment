@@ -1,0 +1,269 @@
+{
+  "spec": "02-organization.cy.js",
+  "browser": "Chrome",
+  "cypress": "15.21.1",
+  "baseUrl": "https://admin.krystalhrsite.kdns.site",
+  "startedAt": "2026-10-09T15:55:54.319Z",
+  "endedAt": "2026-10-09T15:59:02.969Z",
+  "tests": [
+    {
+      "id": "ORG-001",
+      "title": "ORG-001 | Organizations page lists companies with columns, actions and pagination",
+      "state": "passed",
+      "duration": 2815,
+      "error": null
+    },
+    {
+      "id": "ORG-007",
+      "title": "ORG-007 | Add Organization: required fields are enforced",
+      "state": "passed",
+      "duration": 2704,
+      "error": null
+    },
+    {
+      "id": "ORG-008",
+      "title": "ORG-008 | Add Organization: invalid formats are rejected with messages",
+      "state": "passed",
+      "duration": 5917,
+      "error": null
+    },
+    {
+      "id": "ORG-009",
+      "title": "ORG-009 | Add Organization: logo marked as required (*) is enforced",
+      "state": "failed",
+      "duration": 12614,
+      "error": "Error: Timed out retrying after 10000ms: Expected the page to show text matching /logo.*(required|must)/i"
+    },
+    {
+      "id": "ORG-010",
+      "title": "ORG-010 | Add Organization: an invalid Domain Prefix shows an error message",
+      "state": "failed",
+      "duration": 12269,
+      "error": "Error: Timed out retrying after 6000ms: Expected the page to show text matching /The domain prefix field must not be greater than 10 characters\\./"
+    },
+    {
+      "id": "ORG-011",
+      "title": "ORG-011 | Add Organization: status hint matches the Organization Status switch",
+      "state": "failed",
+      "duration": 16786,
+      "error": "Error: Timed out retrying after 15000ms: Expected the page not to show \"Organization will be activated immediately upon creation\""
+    },
+    {
+      "id": "ORG-012",
+      "title": "ORG-012 | Add Organization: Subscription Plan offers every available plan",
+      "state": "failed",
+      "duration": 2546,
+      "error": "AssertionError: expected [ 'Free' ] to be a superset of [ 'Free', 'Basic', 'Premium' ]"
+    },
+    {
+      "id": "ORG-015",
+      "title": "ORG-015 | Admin first / last name reject digits and HTML",
+      "state": "failed",
+      "duration": 5261,
+      "error": "AssertionError: fields the server rejected: expected [ 'disclaimer' ] to be a superset of [ Array(2) ]"
+    },
+    {
+      "id": "ORG-013",
+      "title": "ORG-013 | A valid organization is created as Active and counted on the dashboard",
+      "state": "passed",
+      "duration": 17810,
+      "error": null
+    },
+    {
+      "id": "ORG-014",
+      "title": "ORG-014 | Duplicate organization email is rejected",
+      "state": "passed",
+      "duration": 4945,
+      "error": null
+    },
+    {
+      "id": "ORG-016",
+      "title": "ORG-016 | Admin account email does not expose a predictable plain-text password",
+      "state": "failed",
+      "duration": 2230,
+      "error": "AssertionError: emailed password \"ada4568\" is the admin's first name + last 4 phone digits: expected true to equal false"
+    },
+    {
+      "id": "ORG-017",
+      "title": "ORG-017 | Employee ID uses the ID Prefix entered for the organization",
+      "state": "failed",
+      "duration": 2021,
+      "error": "AssertionError: Employee ID: expected 'QAM260826' to match /^ZQX/"
+    },
+    {
+      "id": "ORG-018",
+      "title": "ORG-018 | An organization created as Active gets only the onboarding emails",
+      "state": "failed",
+      "duration": 2253,
+      "error": "AssertionError: emails meant for pending sign-ups: expected [ Array(2) ] to deeply equal []"
+    },
+    {
+      "id": "ORG-002",
+      "title": "ORG-002 | Search finds an organization regardless of letter case",
+      "state": "passed",
+      "duration": 4350,
+      "error": null
+    },
+    {
+      "id": "ORG-003",
+      "title": "ORG-003 | Search ignores leading and trailing spaces",
+      "state": "failed",
+      "duration": 2777,
+      "error": "AssertionError: organizations found: expected [] to deeply equal [ '1012' ]"
+    },
+    {
+      "id": "ORG-004",
+      "title": "ORG-004 | Sort by Oldest lists the earliest sign-ups first",
+      "state": "passed",
+      "duration": 3456,
+      "error": null
+    },
+    {
+      "id": "ORG-005",
+      "title": "ORG-005 | Sort by Name lists organizations alphabetically",
+      "state": "failed",
+      "duration": 3537,
+      "error": "AssertionError: names in displayed order: expected [ Array(8) ] to deeply equal [ Array(8) ]"
+    },
+    {
+      "id": "ORG-006",
+      "title": "ORG-006 | Each organization appears on exactly one page of the list",
+      "state": "failed",
+      "duration": 3626,
+      "error": "AssertionError: records shown on more than one page: expected [ Array(5) ] to deeply equal []"
+    },
+    {
+      "id": "ORG-019",
+      "title": "ORG-019 | Suspend from the list asks for confirmation and suspends the organization",
+      "state": "passed",
+      "duration": 5347,
+      "error": null
+    },
+    {
+      "id": "ORG-020",
+      "title": "ORG-020 | Activate from the list re-activates a suspended organization",
+      "state": "passed",
+      "duration": 5139,
+      "error": null
+    },
+    {
+      "id": "ORG-021",
+      "title": "ORG-021 | Manage page shows the saved organization details",
+      "state": "passed",
+      "duration": 3377,
+      "error": null
+    },
+    {
+      "id": "ORG-022",
+      "title": "ORG-022 | Manage page shows the industry by name",
+      "state": "failed",
+      "duration": 1831,
+      "error": "AssertionError: Organization Info values: expected [ Array(6) ] to include 'Technology'"
+    },
+    {
+      "id": "ORG-023",
+      "title": "ORG-023 | Edit Info offers the same industries as creation and preselects the saved one",
+      "state": "failed",
+      "duration": 1694,
+      "error": "AssertionError: Edit Info industries: expected [ Array(7) ] to be a superset of [ Array(15) ]"
+    },
+    {
+      "id": "ORG-024",
+      "title": "ORG-024 | Edit Info validates name, email, phone and employees",
+      "state": "passed",
+      "duration": 3181,
+      "error": null
+    },
+    {
+      "id": "ORG-025",
+      "title": "ORG-025 | Edit Info saves changes and Cancel discards them",
+      "state": "passed",
+      "duration": 5437,
+      "error": null
+    },
+    {
+      "id": "ORG-026",
+      "title": "ORG-026 | Admins tab: a new admin can be added after validation",
+      "state": "passed",
+      "duration": 3955,
+      "error": null
+    },
+    {
+      "id": "ORG-027",
+      "title": "ORG-027 | Admins tab: the 'Manage' action on an admin does something",
+      "state": "failed",
+      "duration": 1555,
+      "error": "AssertionError: admin 'Manage' link points nowhere (href=\"#\"): expected true to equal false"
+    },
+    {
+      "id": "ORG-028",
+      "title": "ORG-028 | Billing tab: Change Plan saves the selected plan",
+      "state": "failed",
+      "duration": 6987,
+      "error": "AssertionError: plan after choosing Basic: expected 'Free' to equal 'Basic'"
+    },
+    {
+      "id": "ORG-029",
+      "title": "ORG-029 | Billing tab shows real billing records",
+      "state": "failed",
+      "duration": 16873,
+      "error": "Error: Timed out retrying after 15000ms: Expected the page not to show \"Basic Plan\tDD - MM- YYYY\t₦100,000\t\""
+    },
+    {
+      "id": "ORG-030",
+      "title": "ORG-030 | Resend Details re-sends the onboarding emails",
+      "state": "passed",
+      "duration": 4530,
+      "error": null
+    },
+    {
+      "id": "ORG-031",
+      "title": "ORG-031 | Manage header: organization name is readable against its background",
+      "state": "failed",
+      "duration": 1621,
+      "error": "AssertionError: contrast of rgb(29, 41, 57) on rgb(16, 16, 16): expected 1.29 to be at least 4.5"
+    },
+    {
+      "id": "ORG-032",
+      "title": "ORG-032 | Export CSV downloads every organization",
+      "state": "passed",
+      "duration": 4818,
+      "error": null
+    },
+    {
+      "id": "ORG-033",
+      "title": "ORG-033 | Export CSV populates the Plan and ID prefix columns",
+      "state": "failed",
+      "duration": 2731,
+      "error": "AssertionError: rows with a Plan value out of 963 exported: expected 0 to be above 0"
+    },
+    {
+      "id": "ORG-034",
+      "title": "ORG-034 | Import CSV > Download Template provides a sample file",
+      "state": "passed",
+      "duration": 2385,
+      "error": null
+    },
+    {
+      "id": "ORG-035",
+      "title": "ORG-035 | Import CSV rejects a file that is not CSV",
+      "state": "passed",
+      "duration": 2586,
+      "error": null
+    },
+    {
+      "id": "ORG-036",
+      "title": "ORG-036 | Organization name link opens the tenant site",
+      "state": "failed",
+      "duration": 3799,
+      "error": "CypressError: `cy.request()` failed trying to load:\n\nhttps://qac1417472.krystalhrsite.kdns.site/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: write EPROTO 1288490960928:error:10000458:SSL routines:OPENSSL_internal:TLSV1_ALERT_UNRECOGNIZED_NAME:../../third_party/boringssl/src/ssl/tls_record.cc:486:SSL alert number 112\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://qac1417472.krystalhrsite.kdns.site/\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nhttps://on.cypress.io/request"
+    },
+    {
+      "id": "ORG-037",
+      "title": "ORG-037 | Manage page for an unknown organization returns 404",
+      "state": "passed",
+      "duration": 1111,
+      "error": null
+    }
+  ]
+}

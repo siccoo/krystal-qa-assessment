@@ -1,0 +1,115 @@
+{
+  "spec": "03-signup.cy.js",
+  "browser": "Chrome",
+  "cypress": "15.21.1",
+  "baseUrl": "https://admin.krystalhrsite.kdns.site",
+  "startedAt": "2026-10-09T15:59:08.138Z",
+  "endedAt": "2026-10-09T16:01:06.886Z",
+  "tests": [
+    {
+      "id": "SUP-001",
+      "title": "SUP-001 | Sign Ups page lists pending registrations with Contact and Review actions",
+      "state": "passed",
+      "duration": 4917,
+      "error": null
+    },
+    {
+      "id": "SUP-002",
+      "title": "SUP-002 | A newly created pending organization appears in Sign Ups",
+      "state": "passed",
+      "duration": 11542,
+      "error": null
+    },
+    {
+      "id": "SUP-003",
+      "title": "SUP-003 | Search filters the sign-up list",
+      "state": "passed",
+      "duration": 2470,
+      "error": null
+    },
+    {
+      "id": "SUP-004",
+      "title": "SUP-004 | Search with no match shows an empty-state message",
+      "state": "failed",
+      "duration": 12791,
+      "error": "Error: Timed out retrying after 10000ms: Expected the page to show text matching /No (sign[\\s-]?ups?|companies|organizations|records|results) found/i"
+    },
+    {
+      "id": "SUP-005",
+      "title": "SUP-005 | Sort by Oldest and pagination work on the sign-up list",
+      "state": "passed",
+      "duration": 4301,
+      "error": null
+    },
+    {
+      "id": "SUP-015",
+      "title": "SUP-015 | Sort label keeps the name of the selected option",
+      "state": "failed",
+      "duration": 3419,
+      "error": "AssertionError: label after choosing 'Newest': expected 'Sort by:Latest' to equal 'Sort by:Newest'"
+    },
+    {
+      "id": "SUP-006",
+      "title": "SUP-006 | A pending organization receives only the 'application received' email",
+      "state": "failed",
+      "duration": 3343,
+      "error": "AssertionError: onboarding emails sent before approval: expected [ Array(2) ] to deeply equal []"
+    },
+    {
+      "id": "SUP-007",
+      "title": "SUP-007 | Contact Organization: Title and Message are both flagged when empty",
+      "state": "failed",
+      "duration": 10038,
+      "error": "Error: Timed out retrying after 6000ms: Expected the page to show text matching /title field is required/"
+    },
+    {
+      "id": "SUP-008",
+      "title": "SUP-008 | Contact Organization sends the message to the admin contact",
+      "state": "passed",
+      "duration": 7496,
+      "error": null
+    },
+    {
+      "id": "SUP-009",
+      "title": "SUP-009 | Contact Organization form is cleared after a message is sent",
+      "state": "failed",
+      "duration": 20002,
+      "error": "AssertionError: Timed out retrying after 15000ms: Title when the dialog is reopened: expected 'QAMC contact 1791561609000' to equal ''"
+    },
+    {
+      "id": "SUP-010",
+      "title": "SUP-010 | Review shows the registration details",
+      "state": "passed",
+      "duration": 3124,
+      "error": null
+    },
+    {
+      "id": "SUP-011",
+      "title": "SUP-011 | Review shows the industry by name",
+      "state": "failed",
+      "duration": 3007,
+      "error": "AssertionError: Review dialog values: expected [ Array(9) ] to include 'Finance'"
+    },
+    {
+      "id": "SUP-012",
+      "title": "SUP-012 | Reject removes the registration from the pending list",
+      "state": "failed",
+      "duration": 17961,
+      "error": "AssertionError: pending sign-ups still listed after Reject: expected [ 'QR QAMC REJECT 1635382' ] to deeply equal []"
+    },
+    {
+      "id": "SUP-013",
+      "title": "SUP-013 | Approve activates the organization and removes it from Sign Ups",
+      "state": "passed",
+      "duration": 11193,
+      "error": null
+    },
+    {
+      "id": "SUP-014",
+      "title": "SUP-014 | Approval sends each onboarding email exactly once",
+      "state": "failed",
+      "duration": 2477,
+      "error": "AssertionError: emails sent by the approval: expected { welcome: 2, adminAccount: 2 } to deeply equal { welcome: 1, adminAccount: 1 }"
+    }
+  ]
+}
